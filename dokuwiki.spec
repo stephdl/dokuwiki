@@ -1,6 +1,6 @@
-%define realversion 2015-08-10a
+%define realversion 2016-06-26a
 %define version %(echo %{realversion} | sed -e 's/-//g')
-%define releasenum 3
+%define releasenum 1
 
 %if 0%{?fedora} >= 11 || 0%{?rhel} >= 5
 %global useselinux 1
@@ -253,6 +253,9 @@ fi
 %attr(0644,apache,apache) %{_localstatedir}/lib/%{name}/data/pages/*/*
 
 %changelog
+* Thu Oct 20 2016 Stephane de Labrusse <stephdl@de-labrusse.fr> 2016-06-26a-1
+- Update to 2016-06-26a "Elenor of Tsort"
+
 * Thu Oct 22 2015 Daniel Berteaud <daniel@firewall-services.com> - 20150810a-3
 - Fix SELinux labels
 
