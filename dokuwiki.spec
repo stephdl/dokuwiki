@@ -1,4 +1,4 @@
-%define realversion 2016-06-26a
+%define realversion 2017-02-19a
 %define version %(echo %{realversion} | sed -e 's/-//g')
 %define releasenum 1
 
@@ -253,6 +253,9 @@ fi
 %attr(0644,apache,apache) %{_localstatedir}/lib/%{name}/data/pages/*/*
 
 %changelog
+* Tue Feb 21 2017 Stephane de Labrusse <stephdl@de-labrusse.fr> 2017-02-19a-1
+- Update to 2017-02-19a "Frusterick Manners"
+
 * Thu Oct 20 2016 Stephane de Labrusse <stephdl@de-labrusse.fr> 2016-06-26a-1
 - Update to 2016-06-26a "Elenor of Tsort"
 
