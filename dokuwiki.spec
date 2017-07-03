@@ -1,6 +1,6 @@
 %define realversion 2017-02-19b
 %define version %(echo %{realversion} | sed -e 's/-//g')
-%define releasenum 1
+%define releasenum 2
 
 %if 0%{?fedora} >= 11 || 0%{?rhel} >= 5
 %global useselinux 1
@@ -248,11 +248,14 @@ fi
 %attr(0755,apache,apache) %dir %{_localstatedir}/lib/%{name}/data/tmp
 %attr(0755,apache,apache) %dir %{_localstatedir}/lib/%{name}/data/index
 %attr(0755,apache,apache) %dir %{_localstatedir}/lib/%{name}/data/pages
-#%attr(0755,apache,apache) %dir %{_localstatedir}/lib/%{name}/data/pages/playground
+%attr(0755,apache,apache) %dir %{_localstatedir}/lib/%{name}/data/pages/playground
 %attr(0755,apache,apache) %dir %{_localstatedir}/lib/%{name}/data/pages/wiki
 %attr(0644,apache,apache) %{_localstatedir}/lib/%{name}/data/pages/*/*
 
 %changelog
+* Mon Jul 03 2017 Stephane de Labrusse <stephdl@de-labrusse.fr> 2017-02-19b-2
+- add apache permission on /data/pages/playground
+
 * Sat Mar 11 2017 Stephane de Labrusse <stephdl@de-labrusse.fr> 2017-02-19b-1
 - Update to 2017-02-19b "Frusterick Manners"
 
