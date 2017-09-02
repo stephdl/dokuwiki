@@ -1,4 +1,4 @@
-%define realversion 2017-02-19b
+%define realversion 2017-02-19e
 %define version %(echo %{realversion} | sed -e 's/-//g')
 %define releasenum 2
 
@@ -253,6 +253,9 @@ fi
 %attr(0644,apache,apache) %{_localstatedir}/lib/%{name}/data/pages/*/*
 
 %changelog
+* Sat Sep 02 2017 Stephane de Labrusse <stephdl@de-labrusse.fr> 2017-02-19e-1
+- Update to 2017-02-19e "Frusterick Manners"
+
 * Mon Jul 03 2017 Stephane de Labrusse <stephdl@de-labrusse.fr> 2017-02-19b-2
 - add apache permission on /data/pages/playground
 
