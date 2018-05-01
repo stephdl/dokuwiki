@@ -20,9 +20,9 @@ Source:      http://download.dokuwiki.org/src/dokuwiki/%{name}-%{realversion}.tg
 BuildRoot:   %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:   noarch
 Requires:    php
-Requires:    php-gd
-Requires:    php-imap
-Requires:    php-ldap
+Requires:    rh-php71-php-gd
+Requires:    rh-php71-php-imap
+Requires:    rh-php71-php-ldap
 Requires:    httpd
 
 %description
@@ -255,6 +255,7 @@ fi
 %changelog
 * Tue May 01 2018 Stephane de Labrusse <stephdl@de-labrusse.fr> 2018-04-22-1
 - Update to 2018-04-22 Greebo
+- rh-php71-fpm is default
 
 * Sat Sep 02 2017 Stephane de Labrusse <stephdl@de-labrusse.fr> 2017-02-19e-1
 - Update to 2017-02-19e "Frusterick Manners"
