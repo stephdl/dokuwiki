@@ -1,4 +1,4 @@
-%define realversion 2017-02-19e
+%define realversion 2018-04-22
 %define version %(echo %{realversion} | sed -e 's/-//g')
 %define releasenum 2
 
@@ -253,6 +253,9 @@ fi
 %attr(0644,apache,apache) %{_localstatedir}/lib/%{name}/data/pages/*/*
 
 %changelog
+* Tue May 01 2018 Stephane de Labrusse <stephdl@de-labrusse.fr> 2018-04-22-1
+- Update to 2018-04-22 Greebo
+
 * Sat Sep 02 2017 Stephane de Labrusse <stephdl@de-labrusse.fr> 2017-02-19e-1
 - Update to 2017-02-19e "Frusterick Manners"
 
