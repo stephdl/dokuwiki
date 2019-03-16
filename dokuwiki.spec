@@ -253,6 +253,9 @@ fi
 %attr(0644,apache,apache) %{_localstatedir}/lib/%{name}/data/pages/*/*
 
 %changelog
+* Sat Mar 16 2019 Stephane de Labrusse <stephdl@de-labrusse.fr> 2018-04-22b-1
+- Update to 2018-04-22b Greebo
+
 * Sat May 05 2018 Stephane de Labrusse <stephdl@de-labrusse.fr> 2018-04-22a-1
 - Update to 2018-04-22a Greebo
 
