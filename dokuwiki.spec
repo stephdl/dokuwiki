@@ -1,6 +1,6 @@
-%define realversion 2018-04-22a
+%define realversion 2018-04-22b
 %define version %(echo %{realversion} | sed -e 's/-//g')
-%define releasenum 2
+%define releasenum 1
 
 %if 0%{?fedora} >= 11 || 0%{?rhel} >= 5
 %global useselinux 1
