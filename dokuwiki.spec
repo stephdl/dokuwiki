@@ -20,9 +20,9 @@ Source:      http://download.dokuwiki.org/src/dokuwiki/%{name}-%{realversion}.tg
 BuildRoot:   %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:   noarch
 Requires:    php
-Requires:    rh-php71-php-gd
-Requires:    rh-php71-php-imap
-Requires:    rh-php71-php-ldap
+Requires:    rh-php73-php-gd
+Requires:    rh-php73-php-imap
+Requires:    rh-php73-php-ldap
 Requires:    httpd
 
 %description
