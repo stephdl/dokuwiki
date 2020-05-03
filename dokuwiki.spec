@@ -1,4 +1,4 @@
-%define realversion 2018-04-22b
+%define realversion 2018-04-22c
 %define version %(echo %{realversion} | sed -e 's/-//g')
 %define releasenum 1
 
@@ -253,6 +253,9 @@ fi
 %attr(0644,apache,apache) %{_localstatedir}/lib/%{name}/data/pages/*/*
 
 %changelog
+* Sun May 03 2020 stephane de Labrusse <stephdl@de-labrusse.fr> 2018-04-22c-1
+- Update to 2018-04-22c "Greebo"
+
 * Sat Mar 16 2019 Stephane de Labrusse <stephdl@de-labrusse.fr> 2018-04-22b-1
 - Update to 2018-04-22b Greebo
 
@@ -349,4 +352,3 @@ fi
 
 * Fri Jul 08 2011 Daniel Berteaud <daniel@firewall-services.com> - 20110525a-1
 - Upstream upgrade to 2011-05-25a (based on EPEL RPM from Andrew Colin Kissa)
-
