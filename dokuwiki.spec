@@ -1,4 +1,4 @@
-%define realversion 2018-04-22c
+%define realversion 2020-07-29
 %define version %(echo %{realversion} | sed -e 's/-//g')
 %define releasenum 1
 
@@ -253,6 +253,9 @@ fi
 %attr(0644,apache,apache) %{_localstatedir}/lib/%{name}/data/pages/*/*
 
 %changelog
+* Tue Aug 04 2020 stephane de Labrusse <stephdl@de-labrusse.fr> 2020-07-29
+- Upstream upgrade 2020-07-29
+
 * Sun May 03 2020 stephane de Labrusse <stephdl@de-labrusse.fr> 2018-04-22c-1
 - Update to 2018-04-22c "Greebo"
 
