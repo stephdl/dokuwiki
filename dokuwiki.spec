@@ -155,7 +155,7 @@ install -d -p $RPM_BUILD_ROOT%{_sysconfdir}/httpd/conf.d
 install -d -p $RPM_BUILD_ROOT%{_datadir}/%{name}
 install -d -p $RPM_BUILD_ROOT%{_datadir}/%{name}/bin
 install -d -p $RPM_BUILD_ROOT%{_localstatedir}/lib/%{name}
-mkdir -p $RPM_BUILD_ROOT%{_localstatedir}/lib/%{name}/data/{index,tmp,media,attic,pages,cache,meta,locks,media_attic,media_meta}
+mkdir -p $RPM_BUILD_ROOT%{_localstatedir}/lib/%{name}/data/{index,tmp,media,attic,pages,cache,meta,locks,log,media_attic,media_meta}
 rm -f install.php
 rm -f inc/.htaccess
 rm -f inc/lang/.htaccess
@@ -245,6 +245,7 @@ fi
 %attr(0755,apache,apache) %dir %{_localstatedir}/lib/%{name}/data/cache
 %attr(0755,apache,apache) %dir %{_localstatedir}/lib/%{name}/data/meta
 %attr(0755,apache,apache) %dir %{_localstatedir}/lib/%{name}/data/locks
+%attr(0755,apache,apache) %dir %{_localstatedir}/lib/%{name}/data/log
 %attr(0755,apache,apache) %dir %{_localstatedir}/lib/%{name}/data/tmp
 %attr(0755,apache,apache) %dir %{_localstatedir}/lib/%{name}/data/index
 %attr(0755,apache,apache) %dir %{_localstatedir}/lib/%{name}/data/pages
