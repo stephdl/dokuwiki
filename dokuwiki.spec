@@ -1,4 +1,4 @@
-%define realversion 2022-07-31a
+%define realversion 2023-04-04a
 %define version %(echo %{realversion} | sed -e 's/-//g')
 %define releasenum 1
 
@@ -254,6 +254,9 @@ fi
 %attr(0644,apache,apache) %{_localstatedir}/lib/%{name}/data/pages/*/*
 
 %changelog
+* Tue Jun 20 2023 stephane de Labrusse <stephdl@de-labrusse.fr> 2023-04-04a 
+- Upstream upgrade 2023-04-04a 
+
 * Sat Oct 15 2022 stephane de Labrusse <stephdl@de-labrusse.fr> 2022-07-31a
 - Upstream upgrade 2022-07-31a
 
